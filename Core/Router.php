@@ -10,6 +10,11 @@ class Router
     protected $routes = [];
 
     /**
+     * @var array - Parameters for each route
+     */
+    protected $params = [];
+
+    /**
      * @param string $route  URL
      * @param array  $params
      *
@@ -21,10 +26,35 @@ class Router
     }
 
     /**
-     * @return array
+     * @return array - Return an array of routes
      */
     public function getRoutes()
     {
         return $this->routes;
+    }
+
+    /**
+     * @param string $url - Route URL
+     * @return bool
+     */
+    public function matchRoute($url)
+    {
+        foreach($this->routes as $route => $params)
+        {
+            if ($url == $route)
+            {
+                $this->params = $params;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * @return array
+     */
+    public function getParams()
+    {
+        return $this->params;
     }
 }
