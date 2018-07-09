@@ -18,11 +18,11 @@ class Router
 
     /**
      * @param string $route  URL
-     * @param array  $params
+     * @param array $params
      *
      * @return void
      */
-    public function add($route, $params)
+    public function add($route, $params = [])
     {
         //copied this stuff - convert route to regex, convert variables, start and end delimiters _ case insinsitive flag
         $route = preg_replace('/\//', '\\/', $route);
@@ -48,22 +48,18 @@ class Router
      */
     public function matchRoute($url)
     {
-        //Match via controller/action
-        $pattern = "/^(?P<controller>[a-z-]+)\/(?P<action>[a-z-]+)$/";
-
-        if (preg_match($pattern, $url,$matches)){
-
-            $params = [];
-
-            foreach ($matches as $key => $value){
-                if (is_string($key)){
-                    $params[$key] = $value;
+        foreach ($this->routes as $route => $params) {
+            if (preg_match($route, $url, $matches)) {
+                // Get named capture group values
+                foreach ($matches as $key => $match) {
+                    if (is_string($key)) {
+                        $params[$key] = $match;
+                    }
                 }
+
+                $this->params = $params;
+                return true;
             }
-
-            $this->params = $params;
-            return true;
-
         }
 
         return false;
