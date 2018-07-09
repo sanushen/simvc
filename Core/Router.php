@@ -39,22 +39,26 @@ class Router
      */
     public function matchRoute($url)
     {
-        //regex pattern
-        $pattern = '';
+        //Match via controller/action
+        $pattern = "/^(?P<controller>[a-z-]+)\/(?P<action>[a-z-]+)$/";
 
         if (preg_match($pattern, $url,$matches)){
 
+            $params = [];
+
+            foreach ($matches as $key => $value){
+                if (is_string($key)){
+                    $params[$key] = $value;
+                }
+            }
+
+            $this->params = $params;
+            return true;
+            
         }
-//        foreach($this->routes as $route => $params)
-//        {
-//            //Change this to regex to match controller/action
-//            if ($url == $route)
-//            {
-//                $this->params = $params;
-//                return true;
-//            }
-//        }
+
         return false;
+
     }
 
     /**
