@@ -1,13 +1,13 @@
 <?php
 
 require '../Core/Router.php';
+require '../App/Controllers/GalleryController.php';
 
 $router = new Router();
 
 $router->add('', ['controller' => 'Homepage', 'action' => 'index']);
-$router->add('blog',['controller' => 'Blog', 'action' => 'index']);
-$router->add('shop',['controller' => 'Shop', 'action' => 'index']);
-$router->add('gallery',['controller' => 'Gallery', 'action' => 'index']);
+$router->add('{controller}/{action}');
+$router->add('{controller}/{id:\d+}/{action}');
 
+$router->dispatch($_SERVER['QUERY_STRING']);
 
-$url = $_SERVER['QUERY_STRING'];
