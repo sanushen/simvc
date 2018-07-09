@@ -1,9 +1,14 @@
 <?php
 
-require '../Core/Router.php';
-require '../App/Controllers/GalleryController.php';
+spl_autoload_register(function ($class) {
+    $root = dirname(__DIR__);   // get the parent directory
+    $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
+    if (is_readable($file)) {
+        require $root . '/' . str_replace('\\', '/', $class) . '.php';
+    }
+});
 
-$router = new Router();
+$router = new Core\Router();
 
 $router->add('', ['controller' => 'Homepage', 'action' => 'index']);
 $router->add('{controller}/{action}');

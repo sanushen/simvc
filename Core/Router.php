@@ -1,5 +1,7 @@
 <?php
 
+namespace Core;
+
 class Router
 {
 
@@ -89,6 +91,7 @@ class Router
         if ($this->matchRoute($url)) {
             $controller = $this->params['controller'];
             $controller = $this->convertToStudlyCaps($controller);
+            $controller = "App\Controllers\\$controller";
 
             if (class_exists($controller)) {
                 $controller_object = new $controller();
