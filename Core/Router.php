@@ -75,9 +75,6 @@ class Router
     }
 
     /**
-     * Dispatch the route, creating the controller object and running the
-     * action method
-     *
      * @param string $url The route URL
      *
      * @return void
@@ -110,8 +107,7 @@ class Router
     }
 
     /**
-     * @param string $string The string to convert
-     *
+     * @param string $string
      * @return string
      */
     protected function convertToStudlyCaps($string)
@@ -120,8 +116,7 @@ class Router
     }
 
     /**
-     * @param string $string The string to convert
-     *
+     * @param string $string
      * @return string
      */
     protected function convertToCamelCase($string)
