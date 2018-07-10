@@ -10,7 +10,8 @@ spl_autoload_register(function ($class) {
 
 $router = new Core\Router();
 
-$router->add('', ['controller' => 'Homepage', 'action' => 'index']);
+$router->add('', ['controller' => 'HomeController', 'action' => 'index']);
+
 $router->add('{controller}/{action}');
 $router->add('{controller}/{id:\d+}/{action}');
 
