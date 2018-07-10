@@ -28,7 +28,5 @@ Class GalleryController extends \Core\Controller
     public function edit()
     {
         echo 'Hello from the edit action in the Posts controller!';
-        echo '<p>Route parameters: <pre>' .
-            htmlspecialchars(print_r($this->route_params, true)) . '</pre></p>';
     }
 }
