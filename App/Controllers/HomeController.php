@@ -2,14 +2,16 @@
 
 namespace App\Controllers;
 
+use \Core\View;
+
 Class HomeController extends \Core\Controller
 {
     /**
      * @return void
      */
-    public function index()
+    public function indexAction()
     {
-        echo "Welcome to the SIMVC controller.";
+        View::render('Home/index.php');
     }
 
     /**
