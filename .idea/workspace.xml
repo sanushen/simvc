@@ -59,8 +59,8 @@
       <file leaf-file-name="View.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Core/View.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -98,10 +98,10 @@
         <option value="$PROJECT_DIR$/App/Controllers/GalleryController.php" />
         <option value="$PROJECT_DIR$/App/Controllers/Admin/Users.php" />
         <option value="$PROJECT_DIR$/Core/Router.php" />
-        <option value="$PROJECT_DIR$/Core/View.php" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/App/Views/Home/index.php" />
+        <option value="$PROJECT_DIR$/Core/View.php" />
       </list>
     </option>
   </component>
@@ -219,16 +219,15 @@
       <workItem from="1531125173799" duration="4743000" />
       <workItem from="1531242745541" duration="529000" />
       <workItem from="1531259787345" duration="1375000" />
-      <workItem from="1531511987816" duration="2284000" />
+      <workItem from="1531511987816" duration="2531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15268000" />
+    <option name="totallyTimeSpent" value="15515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="412" width="1922" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17760417" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -435,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Core/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
         </state>
       </provider>
     </entry>
