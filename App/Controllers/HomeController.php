@@ -4,14 +4,18 @@ namespace App\Controllers;
 
 use \Core\View;
 
+
 Class HomeController extends \Core\Controller
 {
     /**
      * @return void
+     *
+     * @throws \Exception
      */
     public function indexAction()
     {
-        View::render('Home/index.php');
+//        View::render('Home/index.php');
+        View::renderTemplate('Home/index.html.twig', ['title'=>'My MVC Framework']);
     }
 
     /**
