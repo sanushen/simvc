@@ -41,7 +41,6 @@ class View
             $twig = new \Twig_Environment($loader);
         }
 
-        $temp = $twig->load($template);
-        echo $twig->render($temp, $args);
+        echo $twig->render($template, $args);
     }
 }
