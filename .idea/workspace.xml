@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27ecd4e3-06a4-4ec1-b9d6-7e51bf72f1f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/App/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Views/Home/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Views/Home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/App/Views/Home/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +37,17 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Views/Home/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="75">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -113,10 +121,11 @@
         <option value="$PROJECT_DIR$/Core/Router.php" />
         <option value="$PROJECT_DIR$/App/Views/Home/index.html" />
         <option value="$PROJECT_DIR$/App/Views/Home/index.php" />
-        <option value="$PROJECT_DIR$/App/Views/Home/index.html.twig" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/Core/View.php" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/App/Views/base.html.twig" />
+        <option value="$PROJECT_DIR$/App/Views/Home/index.html.twig" />
       </list>
     </option>
   </component>
@@ -255,12 +264,12 @@
       <workItem from="1531242745541" duration="529000" />
       <workItem from="1531259787345" duration="1375000" />
       <workItem from="1531511987816" duration="4633000" />
-      <workItem from="1531741285108" duration="2469000" />
+      <workItem from="1531741285108" duration="3359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20086000" />
+    <option name="totallyTimeSpent" value="20976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="558" width="1922" height="1080" extended-state="6" />
@@ -551,10 +560,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/Views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Views/Home/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
