@@ -14,8 +14,7 @@ Class HomeController extends \Core\Controller
      */
     public function indexAction()
     {
-        View::renderTemplate('Home/index.html.twig', ['title'=>'My MVC Framework']);
-//        View::renderTemplate('Home/index.html.twig', ['title'=>'My MVC Framework']);
+        View::renderTemplate('Home/index.html.twig', ['title'=>'SIMVC']);
     }
 
     /**
