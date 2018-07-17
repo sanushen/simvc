@@ -2,14 +2,18 @@
 
 namespace App\Controllers;
 
-Class GalleryController extends \Core\Controller
+use \Core\View;
+
+Class Gallery extends \Core\Controller
 {
     /**
      * @return void
+     *
+     * @throws \Exception
      */
-    public function index()
+    public function indexAction()
     {
-        echo "Gallery index controller";
+        View::renderTemplate('Gallery/index.html.twig');
     }
 
     /**

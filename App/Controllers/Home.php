@@ -4,8 +4,7 @@ namespace App\Controllers;
 
 use \Core\View;
 
-
-Class HomeController extends \Core\Controller
+Class Home extends \Core\Controller
 {
     /**
      * @return void
