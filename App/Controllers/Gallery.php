@@ -23,14 +23,4 @@ Class Gallery extends \Core\Controller
     {
         echo "Added a new action in the Gallery";
     }
-
-    /**
-     * Show the edit page
-     *
-     * @return void
-     */
-    public function edit()
-    {
-        echo 'Hello from the edit action in the Posts controller!';
-    }
 }

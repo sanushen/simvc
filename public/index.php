@@ -5,7 +5,6 @@
  */
 require_once dirname(__DIR__) . '/vendor/vendor/autoload.php';
 
-
 /**
  * Autoloader
  */
@@ -20,6 +19,7 @@ spl_autoload_register(function ($class) {
 $router = new Core\Router();
 
 $router->add('', ['controller' => 'Home', 'action' => 'indexAction']);
+$router->add('gallery', ['controller' => 'Gallery', 'action' => 'indexAction']);
 $router->add('{controller}/{action}');
 $router->add('{controller}/{id:\d+}/{action}');
 $router->add('admin/{controller}/{action}', ['namespace' => 'Admin']);
