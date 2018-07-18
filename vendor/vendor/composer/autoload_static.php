@@ -12,6 +12,10 @@ class ComposerStaticInit54e38a3977a804ebf43eb671138dfa81
     );
 
     public static $prefixLengthsPsr4 = array (
+        'V' => 
+        array (
+            'Vendor\\Namespace\\' => 17,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -32,6 +36,10 @@ class ComposerStaticInit54e38a3977a804ebf43eb671138dfa81
     );
 
     public static $prefixDirsPsr4 = array (
+        'Vendor\\Namespace\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/vendor/vendor',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
