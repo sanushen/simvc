@@ -23,12 +23,12 @@ class Router
      */
     public function add($route, $params = [])
     {
-        //copied this stuff - convert route to regex, convert variables, start and end delimiters _ case insinsitive flag
         $route = preg_replace('/\//', '\\/', $route);
         $route = preg_replace('/\{([a-z]+)\}/', '(?P<\1>[a-z-]+)', $route);
         // Convert variables with custom regular expressions e.g. {id:\d+}
         $route = preg_replace('/\{([a-z]+):([^\}]+)\}/', '(?P<\1>\2)', $route);
         $route = '/^' . $route . '$/i';
+
         $this->routes[$route] = $params;
     }
 
