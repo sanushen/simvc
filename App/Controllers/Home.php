@@ -13,15 +13,6 @@ Class Home extends \Core\Controller
      */
     public function indexAction()
     {
-        View::renderTemplate('Home/index.html.twig', ['title'=>'SIMVC']);
+        View::renderTemplate('Home/index.html', ['title'=>'SIMVC']);
     }
-
-    /**
-     * @return void
-     */
-    public function posts()
-    {
-        echo "Welcome to the SIMVC controller - this is the posts action.";
-    }
-
 }
