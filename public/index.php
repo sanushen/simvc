@@ -30,7 +30,8 @@ $router->add('{controller}/{action}');
 $router->add('{controller}/{id:\d+}/{action}');
 $router->add('admin/{controller}/{action}', ['namespace' => 'Admin']);
 
-$router->dispatch($_SERVER['QUERY_STRING']);
-
-
-
+try{
+    $router->dispatch($_SERVER['QUERY_STRING']);
+} catch(Exception $e) {
+    echo 'Something is broken. Read this - ' . $e->getMessage();
+}
