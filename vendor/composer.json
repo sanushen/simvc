@@ -6,7 +6,7 @@
         "psr-4": {
             "Core\\": "Core",
             "App\\": "App",
-            "Vendor\\Namespace\\": "src/vendor/vendor/"
+            "Vendor\\Namespace\\": "src/vendor/"
         }
     }
 

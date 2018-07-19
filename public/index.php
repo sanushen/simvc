@@ -3,7 +3,7 @@
 /**
  * Autoloader
  */
-require '../vendor/vendor/autoload.php';
+require '../vendor/autoload.php';
 
 /**
  * Autoloader
